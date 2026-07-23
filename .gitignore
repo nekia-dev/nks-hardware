@@ -1,0 +1,51 @@
+# === KiCad ===
+# Copias de seguridad y autoguardado
+*-backups/
+_restore_backup_*/
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.sch-bak
+*.bak
+*~
+_autosave-*
+\#auto_saved_files#
+
+# Estado local del interfaz (por usuario, no se comparte)
+*.kicad_prl
+
+# Bloqueos y caches (se regeneran solos)
+fp-info-cache
+*.lck
+~*.lck
+
+# Netlists, reportes y temporales
+*.net
+*.xml
+*.rpt
+*.drc
+*DRC*.json
+errores*.json
+
+# Intermedios de Freerouting (se regeneran desde el proyecto)
+*.dsn
+*.ses
+*.rules
+
+# === Editores ===
+.history/
+.vscode/
+.idea/
+
+# === Sistema ===
+.DS_Store
+Thumbs.db
+
+# === Secretos (nunca subir) ===
+*.env
+secret.env
+config/secret.env
+*.key
+*.pem
+
+# NOTA: los Gerbers SÍ se versionan, en fab/vN_fecha/
+# Saber exactamente qué se envió a fabricar es parte del historial del proyecto.
