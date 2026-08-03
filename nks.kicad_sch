@@ -5,6 +5,196 @@
 	(uuid "ff07ce8f-c3d4-45e3-8c6f-5cb7c24c6ede")
 	(paper "A3")
 	(lib_symbols
+		(symbol "Switch:SW_SPDT"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPDT"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Switch, single pole double throw"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch single-pole double-throw spdt ON-ON"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_SPDT_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 0.254) (xy 1.651 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 -2.54)
+					(radius 0.4572)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPDT_1_1"
+				(rectangle
+					(start -3.175 3.81)
+					(end 3.175 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "nks:A1"
 			(pin_names
 				(offset 1.016)
@@ -2065,236 +2255,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "nks:R2"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R2"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "10k"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R2_0_1"
-				(rectangle
-					(start -7.62 2.54)
-					(end 7.62 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "R2_1_1"
-				(pin passive line
-					(at -11.43 1.27 0)
-					(length 3.81)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 11.43 1.27 180)
-					(length 3.81)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "nks:SW1"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW1"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SW1_0_1"
-				(rectangle
-					(start -7.62 2.54)
-					(end 7.62 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "SW1_1_1"
-				(pin passive line
-					(at -11.43 1.27 0)
-					(length 3.81)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 11.43 1.27 180)
-					(length 3.81)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "nks:U2"
 			(pin_names
 				(offset 1.016)
@@ -2740,7 +2700,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 201.93) (xy 119.38 201.93)
+			(xy 119.38 201.93) (xy 128.27 201.93)
 		)
 		(stroke
 			(width 0)
@@ -2780,7 +2740,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 201.93) (xy 147.32 201.93)
+			(xy 144.78 203.2) (xy 147.32 203.2)
 		)
 		(stroke
 			(width 0)
@@ -2890,16 +2850,6 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 161.29) (xy 147.32 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f36b9ee-ad6c-44b6-8422-e71d04163177")
-	)
-	(wire
-		(pts
 			(xy 294.64 163.83) (xy 297.18 163.83)
 		)
 		(stroke
@@ -2940,6 +2890,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 201.93) (xy 128.27 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bff90d2-5fc8-48ea-acee-966eab6dee9a")
+	)
+	(wire
+		(pts
 			(xy 82.55 46.99) (xy 80.01 46.99)
 		)
 		(stroke
@@ -2977,6 +2937,16 @@
 			(type default)
 		)
 		(uuid "7d28c9f2-8194-4e3f-85e8-f2b6348e50c2")
+	)
+	(wire
+		(pts
+			(xy 138.43 200.66) (xy 142.24 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d471f14-5d57-44e4-afdf-dfef4fe5fd05")
 	)
 	(wire
 		(pts
@@ -3110,6 +3080,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 205.74) (xy 144.78 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b00f96fd-ef7c-4e5f-8d97-6aa823a8b2d8")
+	)
+	(wire
+		(pts
 			(xy 105.41 49.53) (xy 107.95 49.53)
 		)
 		(stroke
@@ -3127,16 +3107,6 @@
 			(type default)
 		)
 		(uuid "b4edc61c-b6cc-4da9-8294-f20de3ba2e4c")
-	)
-	(wire
-		(pts
-			(xy 121.92 161.29) (xy 119.38 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bc459d9c-8213-4355-891f-2253972bda40")
 	)
 	(wire
 		(pts
@@ -3197,6 +3167,16 @@
 			(type default)
 		)
 		(uuid "defdf5eb-d1c1-455d-8dd4-45188fdfe528")
+	)
+	(wire
+		(pts
+			(xy 144.78 205.74) (xy 144.78 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e53ba34c-e280-48e9-b318-b31df27d8c52")
 	)
 	(wire
 		(pts
@@ -3267,6 +3247,16 @@
 			(justify right bottom)
 		)
 		(uuid "050f74a7-aef9-416f-86d1-cf487734a8d2")
+	)
+	(label "+3V3"
+		(at 142.24 200.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0a00713e-3c68-49c5-9e7f-203cfb00acb9")
 	)
 	(label "GND"
 		(at 189.23 44.45 180)
@@ -3347,16 +3337,6 @@
 			(justify left bottom)
 		)
 		(uuid "2852da21-84f8-4256-8ae3-13e6efd88497")
-	)
-	(label "BTN"
-		(at 147.32 161.29 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2b57e6d8-5817-4e38-8d43-6beb020da819")
 	)
 	(label "SD_MOSI"
 		(at 107.95 41.91 0)
@@ -3688,16 +3668,6 @@
 		)
 		(uuid "c7e58c5c-2d8f-43d0-80eb-518c64b36a51")
 	)
-	(label "+3V3"
-		(at 119.38 161.29 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c892e054-1ef8-4a52-8b9a-3c452274e10b")
-	)
 	(label "SD_CS"
 		(at 107.95 49.53 0)
 		(effects
@@ -3779,7 +3749,7 @@
 		(uuid "de35dabb-79af-4026-8440-3a113e0258c7")
 	)
 	(label "GND"
-		(at 147.32 201.93 0)
+		(at 147.32 203.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4201,83 +4171,6 @@
 			(project "nks"
 				(path "/ff07ce8f-c3d4-45e3-8c6f-5cb7c24c6ede"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "nks:R2")
-		(at 133.35 162.56 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "6fb46f3c-3f13-40c1-872a-afbf4112d804")
-		(property "Reference" "R2"
-			(at 133.35 157.48 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 133.35 167.64 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 133.35 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 162.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 133.35 162.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cf3fc81c-edbc-4da9-8436-256dc4ad7e4c")
-		)
-		(pin "2"
-			(uuid "cf3fc51c-edbc-4890-818c-8d23fae15411")
-		)
-		(instances
-			(project "nks"
-				(path "/ff07ce8f-c3d4-45e3-8c6f-5cb7c24c6ede"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -4930,7 +4823,7 @@
 		)
 	)
 	(symbol
-		(lib_id "nks:SW1")
+		(lib_id "Switch:SW_SPDT")
 		(at 133.35 203.2 0)
 		(unit 1)
 		(body_style 1)
@@ -4950,7 +4843,7 @@
 				)
 			)
 		)
-		(property "Value" "SW_Push"
+		(property "Value" "SW_SPDT"
 			(at 133.35 208.28 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4960,7 +4853,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
+		(property "Footprint" "nks:SS12D00"
 			(at 133.35 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -4972,7 +4865,8 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 203.2 0)
+			(at 133.35 210.82 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4981,13 +4875,16 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Switch, single pole double throw"
 			(at 133.35 203.2 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
 				)
 			)
 		)
@@ -4996,6 +4893,9 @@
 		)
 		(pin "2"
 			(uuid "caae3f6f-440c-4610-86c1-06e8f2b17391")
+		)
+		(pin "3"
+			(uuid "c809f7aa-aaa6-4142-a5f6-b3a4850a3af6")
 		)
 		(instances
 			(project "nks"

@@ -522,10 +522,14 @@
   },
   "pcbnew": {
     "last_paths": {
+      "gencad": "",
       "idf": "",
       "netlist": "",
       "plot": "Gerber_NKS/",
+      "pos_files": "",
       "specctra_dsn": "",
+      "step": "",
+      "svg": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -645,13 +649,18 @@
       {
         "filename": "nks.kicad_sch",
         "name": "nks",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "ff07ce8f-c3d4-45e3-8c6f-5cb7c24c6ede"
       }
     ],
-    "used_designators": "",
+    "used_designators": "SW2",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "ff07ce8f-c3d4-45e3-8c6f-5cb7c24c6ede",
+      "nks"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
