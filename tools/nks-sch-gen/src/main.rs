@@ -11,6 +11,7 @@ fn pas_r(num: &str, name: &str, net: &str) -> Pin { Pin::new(num, name, Side::Ri
 const HDR6: &str = "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical";
 const HDR4: &str = "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical";
 const HDR22: &str = "Connector_PinHeader_2.54mm:PinHeader_1x22_P2.54mm_Vertical";
+const HDR2X3: &str = "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical";
 const R0805: &str = "Resistor_SMD:R_0805_2012Metric";
 const C0805: &str = "Capacitor_SMD:C_0805_2012Metric";
 const LED0805: &str = "LED_SMD:LED_0805_2012Metric";
@@ -45,12 +46,16 @@ fn main() {
         .pin(sig("3", "ON", "ENABLE")).pin(sig("4", "CT", "CT_NC"))
         .pin(p_out("5", "VOUT", "+3V3_SW")).pin(sig("6", "QOD", "+3V3_SW")));
 
-    sch.add(Component::new("A1", "INMP441", HDR6, 130.0, 20.0)
-        .pin(p_in("1", "VDD", "+3V3_SW")).pin(p_in("2", "GND", "GND")).pin(pas_l("6", "L/R", "GND"))
-        .pin(sig("3", "SD", "I2S_SD")).pin(sig("4", "SCK", "I2S_SCK")).pin(sig("5", "WS", "I2S_WS")));
-    sch.add(Component::new("A2", "INMP441", HDR6, 130.0, 80.0)
-        .pin(p_in("1", "VDD", "+3V3_SW")).pin(p_in("2", "GND", "GND")).pin(pas_l("6", "L/R", "+3V3_SW"))
-        .pin(sig("3", "SD", "I2S_SD")).pin(sig("4", "SCK", "I2S_SCK")).pin(sig("5", "WS", "I2S_WS")));
+    sch.add(Component::new("A1", "INMP441", HDR2X3, 130.0, 20.0)
+        .pin(pas_l("1", "L/R", "GND")).pin(p_in("2", "GND", "GND"))
+        .pin(sig("3", "WS", "I2S_WS")).pin(p_in("4", "VDD", "+3V3_SW"))
+        .pin(sig("5", "SCK", "I2S_SCK")).pin(sig("6", "SD", "I2S_SD")));
+    
+    sch.add(Component::new("A2", "INMP441", HDR2X3, 130.0, 80.0)
+        .pin(pas_l("1", "L/R", "+3V3_SW")).pin(p_in("2", "GND", "GND"))
+        .pin(sig("3", "WS", "I2S_WS")).pin(p_in("4", "VDD", "+3V3_SW"))
+        .pin(sig("5", "SCK", "I2S_SCK")).pin(sig("6", "SD", "I2S_SD")));
+
 
     sch.add(Component::new("J1", "microSD", HDR6, 210.0, 20.0)
         .pin(p_in("1", "VCC", "+3V3_SW")).pin(p_in("2", "GND", "GND"))
