@@ -89,7 +89,6 @@
 		)
 		(capping no)
 		(filling no)
-		(zone_defaults)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_575555ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
@@ -4694,6 +4693,18 @@
 		(fill no)
 		(layer "Edge.Cuts")
 		(uuid "114e4200-c91b-4b1f-966a-fe0b76320654")
+	)
+	(gr_text "NkS v1.0\nNekia Systems\n2026-08"
+		(at 164 46 0)
+		(layer "F.SilkS")
+		(uuid "21cd4ad6-da68-4440-8b2a-0629d0d66e3b")
+		(effects
+			(font
+				(size 0.8 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
 	)
 	(segment
 		(start 109.54 54.84)
